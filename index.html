@@ -9,52 +9,58 @@
   </head>
   <body>
     <div class="container">
-      <div class="well col-md-6">
+      <div class="well col-md-7">
+        <h1>Address Book</h1>
         <form id="address_information">
 
           <div class="form-group">
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name">
+            <label for="first_name">First Name:</label><br>
+            <input type="text" id="first_name" class="form-control">
           </div>
 
           <div class="form-group">
             <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name">
+            <input type="text" id="last_name" class="form-control">
           </div>
 
           <div class="form-group">
             <label for="phone_number">Phone Number:</label>
-            <input type="text" id="phone_number">
+            <input type="text" id="phone_number" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="street">Street:</label>
+            <input type="text" id="street" class="form-control">
           </div>
 
           <div class="form-group">
             <label for="city">City:</label>
-            <input type="text" id="city">
+            <input type="text" id="city" class="form-control">
           </div>
 
           <div class="form-group">
             <label for="state">State:</label>
-            <input type="text" id="state">
+            <input type="text" id="state" class="form-control">
           </div>
 
           <div class="form-group">
-            <label for="zip_code">First Name:</label>
-            <input type="text" id="zip_code">
+            <label for="zip_code">Zip Code:</label>
+            <input type="text" id="zip_code" class="form-control">
           </div>
 
-          <button type="submit">Create Contact</button>
+          <button type="submit" class='btn btn-info'>Create Contact</button>
 
         </form>
       </div>
 
       <div class="col-md-2"></div>
-      <div class="col-md-3" id="contact_card">
-        <h3></h3>
-        <p id='contact-phone_number'></p>
+      <div class="col-md-3 well" id="contact-card">
+        <h3 id="contact-full-name"></h3>
+        <p id='contact-phone-number'></p>
         <p id='contact-address'></p>
       </div>
 
-      <div class="well col-md-6">
+      <div class="well col-md-7">
         <div class="results">
           <h3>Contacts</h3>
           <ul id='contacts'>

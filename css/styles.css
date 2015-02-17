@@ -1,0 +1,12 @@
+.contact {
+  color: blue;
+}
+
+.contact:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#contact-card {
+  display: none;
+}
